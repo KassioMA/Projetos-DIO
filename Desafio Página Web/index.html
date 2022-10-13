@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Página Web</title>
+    <style>
+        body {
+            background-color:bisque
+            color: black;
+            font: normal 20pt Arial; }
+    </style>
+</head>
+<body>
+    <h1 id="inicio">Desafio Página Web</h1>
+    <hr>
+    <h2>Índice</h2>
+    <h3>
+        <ol>
+            <li><a href="#ferramentas">Ferramentas Utilizadas</a></li>
+            <li><a href="#inspetor">Inspetor de Elementos</a></li>
+            <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+            <li><a href="#tags">Falando sobre Tags</a></li>
+            <li><a href="#atributos">Atributos das Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#refe">Referências</a></li>
+        </ol>
+    </h3>
+    <h2 id="ferramentas">Ferramentas Utilizadas</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        Esse tópico aborda a preparação para o ínicio do curso, o professor indica que para o desenvolvimento de uma página Web 
+        você pode usar qualquer editor de texto simples, como o <i>Bloco de Notas, Sublime,</i> ou o <i> Notepad++</i> por exemplo. Mas nesse curso em si
+        usaremos o <strong>Vs Code</strong> e algumas extensões como o LiveServer.
+    </p>
+    
+    <h2 id="inspetor">Inspetor de Elementos</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        A ferramenta de inspecionar elemento é um utilitário que permite visualizar o código-fonte subjacente de qualquer página web. 
+        Além disso, você pode usá-la para fazer alterações temporárias e ver os resultados em tempo real, deixando o código-fonte original intacto. 
+        Isso é extremamente útil se você precisa testar uma alteração ou diagnosticar um problema. 
+        Também pode ser de grande valia se você encontrar um site com um recurso de que goste e estiver curioso para saber como ele foi implementado. 
+        A maioria dos principais navegadores, incluindo Chrome, Firefox e Safari, oferece algumas variações dessa ferramenta
+    </p>
+    <h2 id="estrutura">Estrutura Básica do HTML</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        A estrutura principal deve iniciar com a etiqueta <HTML> e terminar com a etiqueta </HTML>. O cabeçalho, delimitado pelas etiquetas <HEAD> e </HEAD>, destina-se a conter informações sobre o documento - 
+        por exemplo, o título do documento (que é construído com o elemento TITLE e aparece no título da janela do navegador). O corpo do documento, delimitado pelas etiquetas <BODY> e </BODY>, 
+        destina-se ao conteúdo da página.
+    </p>
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--GaUw6Vt6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3jd49ci9wpewjzm63n9b.png" alt="Imagem de uma estrutura básica de HTML">
+
+    <h2 id="tags">Falando sobre Tags</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em HTML, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página.
+        A principal característica das tags é estarem sempre dentro dos sinais de chevron (sinal de “maior que” e “menor que”), ou seja: < >.As tags HTML são divididas em dois tipos: as que precisam de fechamento e as que não precisam de fechamento. 
+        As tags que precisam de fechamento possuem a sintaxe <tag> </tag>, já as que não precisam de fechamento possuem como estrutura <tag/>.
+        Além disso, uma mesma tag pode receber um ou mais atributos, que possuirá um valor que modifica sua estrutura ou funcionalidades
+    </p>
+
+    <h2>Atributos das Tags</h2>
+    <small><a href="#inicio">(voltar)</a></small>    
+    <p>
+        Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento.
+        A maioria das tags tem seus próprios atributos. Contudo, existem alguns atributos genéricos que podem ser utilizados na maioria das tags HTML, vamos estudá-los:
+    </p>
+    <ul>
+        <li><strong>class=”…“</strong> – Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);</li>
+        <li><strong>id=”…“</strong> – Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);</li>
+        <li><strong>style=”…”</strong> - Permite incluir elementos CSS (estilos) dentro da tag;</li>
+        <li><strong>lang=”…”</strong> - Define o idioma principal do elemento;</li>
+        <li><strong>title=”…”</strong> – Define o título do elemento;</li>
+        <li><strong>alt=”…”</strong> – Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO;</li>
+        <li><strong>hidden</strong> – Oculta o elemento;</li>
+        <li><strong>align=”…”</strong> – Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e justify;</li>
+        <li><strong>width=”…”</strong> – Define uma largura para o elemento;</li>
+        <li><strong>height=”…”</strong> – Define uma altura para o elemento.</li>
+    </ul>
+
+    <h2 id="textos">Textos</h2>
+    <small><a href="#inicio">(voltar)</a></small> 
+    <p>
+        As tags de textos mais conhecidads são as agás (h1, h2, h3, h4, h5, h6) 
+        As tags de título possuem valor semântico, variando entre seis níveis hierárquicos. 
+        Para fins de otimização SEO é importante entender como funcionam, e fazer uma utilização adequada. Para definir títulos
+        Conforme dito anteriormente, a distribuição de título interferem no otimização do SEO de uma página.  
+        Com isso, uma página contendo apenas h1 não seria bem vista pelos mecanismos de busca. 
+        Portanto, é importante dividir os títulos deixando o h1 apenas para o título principal, h2 ou h3 para títulos das seções e h4 a h6 para subtítulos ou títulos que possuam baixo valor hierárquico em relação aos demais.
+        Outras tags de texto são:
+    </p>
+
+    <h2 id="refe">Referências</h2>
+    <small><a href="#inicio">(voltar)</a></small> 
+    <p>
+        Confira mais em: <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>
+        <a href=https://www.homehost.com.br/blog/tutoriais/tags-html/" target="_blank" rel="noopener noreferrer">homehost.com</a>
+        <a href="http://www.nce.ufrj.br/ginape/cursohtml/conteudo/introducao/estrutura.htm" target="_blank" rel="noopener noreferrer">nce.ufrj</a>
+        <a href="https://www.hostgator.com.br/blog/como-utilizar-o-inspecionar-elemento/" target="_blank" rel="noopener noreferrer">hostgator</a>
+    </p>
+</body>
+</html>
